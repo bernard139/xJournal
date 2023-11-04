@@ -1,0 +1,154 @@
+{% extends "_layout.html" %} {% block title %}Trade History{% endblock %} {%
+block content %}
+<!-- Content for the selected page will be loaded here using JavaScript -->
+<div class="">
+  <label>Pair</label>
+
+  <select>
+    <option value="All">All</option>
+    <option value="EURUSD">EURUSD</option>
+  </select>
+</div>
+
+<div class="">
+  <label>Side</label>
+
+  <select>
+    <option value="All">All</option>
+    <option value="EURUSD">Buy</option>
+    <option value="EURUSD">Sell</option>
+  </select>
+</div>
+
+<table id="tradeTable">
+  <thead>
+    <tr>
+      <th>S/N</th>
+      <th>Pair</th>
+      <th>Side</th>
+      <th>Lot Size</th>
+      <th>Open Price</th>
+      <th>Close Price</th>
+      <th>Stop Loss</th>
+      <th>Take Profit</th>
+      <th>Net Profit</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>AUDUSD</td>
+      <td>Buy</td>
+      <td>1.0</td>
+      <td>1.06016</td>
+      <td>1.06079</td>
+      <td>1.06102</td>
+      <td>1.04480</td>
+      <td>-42.5%</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>EURUSD</td>
+      <td>Sell</td>
+      <td>0.5</td>
+      <td>1.06016</td>
+      <td>1.06079</td>
+      <td>1.06102</td>
+      <td>1.04480</td>
+      <td>-42.5%</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>EURUSD</td>
+      <td>Sell</td>
+      <td>0.5</td>
+      <td>1.06016</td>
+      <td>1.06079</td>
+      <td>1.06102</td>
+      <td>1.04480</td>
+      <td>-42.5%</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>EURUSD</td>
+      <td>Sell</td>
+      <td>0.5</td>
+      <td>1.06016</td>
+      <td>1.06079</td>
+      <td>1.06102</td>
+      <td>1.04480</td>
+      <td>-42.5%</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>EURUSD</td>
+      <td>Sell</td>
+      <td>0.5</td>
+      <td>1.06016</td>
+      <td>1.06079</td>
+      <td>1.06102</td>
+      <td>1.04480</td>
+      <td>-42.5%</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>EURUSD</td>
+      <td>Sell</td>
+      <td>0.5</td>
+      <td>1.06016</td>
+      <td>1.06079</td>
+      <td>1.06102</td>
+      <td>1.04480</td>
+      <td>-42.5%</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>EURUSD</td>
+      <td>Sell</td>
+      <td>0.5</td>
+      <td>1.06016</td>
+      <td>1.06079</td>
+      <td>1.06102</td>
+      <td>1.04480</td>
+      <td>-42.5%</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>EURUSD</td>
+      <td>Sell</td>
+      <td>0.5</td>
+      <td>1.06016</td>
+      <td>1.06079</td>
+      <td>1.06102</td>
+      <td>1.04480</td>
+      <td>-42.5%</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>EURUSD</td>
+      <td>Sell</td>
+      <td>0.5</td>
+      <td>1.06016</td>
+      <td>1.06079</td>
+      <td>1.06102</td>
+      <td>1.04480</td>
+      <td>-42.5%</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>EURUSD</td>
+      <td>Sell</td>
+      <td>0.5</td>
+      <td>1.06016</td>
+      <td>1.06079</td>
+      <td>1.06102</td>
+      <td>1.04480</td>
+      <td>-42.5%</td>
+    </tr>
+  </tbody>
+</table>
+
+<script src="../../static/js/trade_history.js"></script>
+{% endblock %}
+

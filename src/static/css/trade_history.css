@@ -1,0 +1,35 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  border: #333 1px solid;
+  color: white;
+  font-size: 1.25rem;
+}
+
+table.dataTable {
+  color: white;
+}
+  
+table, td, th {
+  text-align: left;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+}
+
+/* Style the table headers */
+table th {
+  background-color: rgb(139, 0, 0, 0.25);
+  color: #fff;
+  text-align: center;
+}
+
+table tr {
+  border-bottom: #333 1px solid;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../static/css/layout.css" />
+    <link rel="stylesheet" href="../static/css/trade_history.css" />
+    <link rel="stylesheet" href="../static/css/dashboard.css" />
+    <link rel="stylesheet" href="../static/css/journal.css" />
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css"
+    />
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+
+    <title>{% block title %}{% endblock %} - xJournal</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="navbar">
+          <li><a href="{{ url_for('core.home') }}">Home</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <aside class="side-menu">
+        <ul>
+          <li id="dashboard">
+            <a href="{{ url_for('dashboard.index') }}">Dashboard</a>
+          </li>
+          <li id="trade_history">
+            <a href="{{ url_for('trade_history.index') }}">Trade History</a>
+          </li>
+          <li id="journal">
+            <a href="{{ url_for('journal.index') }}">Journal</a>
+          </li>
+          <li id="calculator">
+            <a href="{{ url_for('calculator.index') }}">Calculator</a>
+          </li>
+          <li id="logout">
+            <a href="{{ url_for('accounts.logout') }}">Logout</a>
+          </li>
+        </ul>
+      </aside>
+      <section class="content">{% block content %}{% endblock %}</section>
+    </main>
+  </body>
+</html>

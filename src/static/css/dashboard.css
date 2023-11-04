@@ -1,0 +1,33 @@
+.metrics-1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    width: 54vw;
+    /* margin: 0 auto; */
+    background-color: red;
+}
+
+.metrics-1 div {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+    height: 20vh;
+}
+
+.metrics-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    width: 36vw;
+    /* margin: 0 auto; */
+    background-color: blue;
+}
+
+.metrics-2 div {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+    height: 20vh;
+}
